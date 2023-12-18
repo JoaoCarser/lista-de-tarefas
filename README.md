@@ -1,8 +1,18 @@
-# React + Vite
+# Lista de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Visão Geral do Site
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque modi voluptas ipsum ipsam minus, consequatur reprehenderit dolorum
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Gráficos do site
+
+### Início
+<!-- ![Walking](https://github.com/JoaoCarser/assets/blob/main/PaintBall/PaintBallWalking.png) -->
+
+## Tecnologias Utilizadas
+
+# Autor
+
+João Carser
+
+https://linktr.ee/joao_carser
