@@ -1,4 +1,7 @@
+/* FONTE ROBOTU */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     background-color: #222435;
@@ -39,6 +42,7 @@ input {
 button.add{
     position: absolute;
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
     top: 0;
     right: 0;
     background: #363b65;
@@ -70,6 +74,9 @@ button.add:hover{
     border: 1px solid #363b65;
     cursor: pointer;
     margin-bottom: 10px;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .item:hover{
@@ -78,10 +85,66 @@ button.add:hover{
 
 .item span{
     width: 100%;
-    background: blue;
     color: white;
     margin-right: 10px;
     padding: 10px 15px;
+}
+
+.item.completo{
+    display: flex;
+    justify-content: space-between;
+    background: #1e1f2e;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    opacity: 0.4;
+}
+
+.item.completo span{
+    width: 100%;
+    color: #4d5062;
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: line-through;
+}
+
+button.del{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background: none;
+    border: none;
+    color: #4d506e;
+    cursor: pointer;
+    padding: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button.del:hover{
+    background: #ff004c;
+    color: white;
+}
+
+button.deleteAll{
+    padding: 15px;
+    color: #ff004c;
+    background: none;
+    border: 1px solid #ff004c;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+button.deleteAll:hover{
+    padding: 15px;
+    color: white;
+    background: #ff004c;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
 }
 
 /* SE A TELA DO NAVEGADOR TIVER LARGURA DE 900PX OU MENOS O WIDTH DO FORMULARIO OCUPARÁ 100% DA TELA */
