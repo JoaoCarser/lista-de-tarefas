@@ -1,12 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./TodoList.css"
 import Icone from './assets/icon.png'
 
 function TodoList() {
 
+    // PEGUE UM ITEM QUE JA ESTEJA SALVO NO LOCALSTORAGE "NAVEGADOR" SE HOUVER
+    const listaStorage = localStorage.getItem('Lista');
+
     // ESTADOS
-    const [lista, setLista] = useState([]);
+    const [lista, setLista] = useState(listaStorage ? JSON.parse(listaStorage) : [] );
     const [newItem, setNewItem] = useState("");
+
+    useEffect(()=>{
+        localStorage.setItem('Lista', JSON.stringify(lista));
+    }, [lista])
 
     // FUNÇOES
     function adicionaItem(form) {
